@@ -62,7 +62,7 @@ void heap_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	for (j= (size / 2) - 1; j >= 0; j--)
+	for (j = (size / 2) - 1; j >= 0; j--)
 		max_heapify(array, size, size, j);
 
 	for (j = size - 1; j > 0; j--)
