@@ -107,7 +107,8 @@ void insertion_sort_deck_value(deck_node_t **deck)
 	{
 		t = i->next;
 		ins = i->prev;
-		while (ins != NULL && ins->card->kind == i->card->kind && get_value(ins) > get_value(i))
+		while (ins != NULL && ins->card->kind == i->card->kind
+			&& get_value(ins) > get_value(i))
 		{
 			ins->next = i->next;
 			if (i->next != NULL)

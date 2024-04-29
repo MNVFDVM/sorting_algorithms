@@ -53,7 +53,7 @@ int hoare_partition(int *array, size_t size, int left, int right)
 		}
 	}
 
-	return a;
+	return (a);
 }
 
 /**
