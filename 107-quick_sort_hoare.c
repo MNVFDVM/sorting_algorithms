@@ -21,7 +21,7 @@ void swap_ints(int *a, int *b)
 
 /**
  * hoare_partition - Order a subset of an array of integers
- *                   according to the hoare partition scheme.
+ *                   according to the Hoare partition scheme.
  * @array: The array of integers.
  * @size: The size of the array.
  * @left: The starting index of the subset to order.
@@ -53,7 +53,7 @@ int hoare_partition(int *array, size_t size, int left, int right)
 		}
 	}
 
-	return (a);
+	return a;
 }
 
 /**
@@ -71,7 +71,7 @@ void hoare_sort(int *array, size_t size, int left, int right)
 
 	if (right - left > 0)
 	{
-		pa = hoare_partition(array, size, left, right);
+		p = hoare_partition(array, size, left, right);
 		hoare_sort(array, size, left, p - 1);
 		hoare_sort(array, size, p, right);
 	}
