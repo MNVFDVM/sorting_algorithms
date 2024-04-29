@@ -37,7 +37,8 @@ char flow)
 	{
 		for (j = start; j < start + ju; j++)
 		{
-			if ((flow == UP && array[j] > array[j + ju]) || (flow == DOWN && array[j] < array[j + ju]))
+			if ((flow == UP && array[j] > array[j + ju]) ||
+			(flow == DOWN && array[j] < array[j + ju]))
 				swap_ints(array + j, array + j + ju);
 		}
 		bitonic_merge(array, size, start, ju, flow);

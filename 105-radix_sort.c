@@ -65,7 +65,7 @@ void radix_counting_sort(int *array, size_t size, int sig, int *buff)
 void radix_sort(int *array, size_t size)
 {
 	int m, s, *b;
-	
+
 	if (array == NULL || size < 2)
 		return;
 
